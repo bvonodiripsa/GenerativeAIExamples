@@ -30,7 +30,7 @@ Below is the proposed architecture:
 
 ![Architecture Diagram](images/Slide1.JPG)
 
-*Pic.1: Architecture Diagram Placeholder*
+*Pic.1: Architecture Diagram*
 
 **Key Points:**
 - New AI functionality is based on secure (HTTPS) communication with external endpoints to SQL Server, which could be in the cloud or on-premises.
