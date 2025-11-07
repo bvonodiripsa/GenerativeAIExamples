@@ -123,7 +123,7 @@ In general, I am trying to reach the same goals using the latest NVIDIA and Azur
     vi. Execute demo scripts to populate embeddings via NVIDIA NIM.
     vii. Verify using **Select_Embeddings.sql** again.
 
-[▶️ Watch Demo](https://drive.google.com/file/d/14wiMAB_tdsi7u08CM7p4G5pHeahBmkPY/view?usp=sharing)
+[▶️ Watch Demo](https://drive.google.com/file/d/1VnyfHsL_rWfZvcHfKxx1NZXd5XvL8RcK/view?usp=sharing)
 
 ---
 
