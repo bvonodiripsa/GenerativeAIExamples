@@ -125,7 +125,7 @@ In general, I am trying to reach the same goals using the latest NVIDIA and Azur
   <li>Execute demo scripts to populate embeddings via NVIDIA NIM.</li>
   <li>Verify using <strong>Select_Embeddings.sql</strong> again.</li>
   <li>Get all product embeddings using <strong>Get_all_embeddings.sql</strong>.</li>
-  <li>Execute <strong>RunPrompt.sql</strong> to demonstrate SQL Server cosine <code>vector_distance</code> usage for semantic search using different languages.</li>
+  <li>Execute <strong>Run_Prompt.sql</strong> to demonstrate SQL Server cosine <code>vector_distance</code> usage for semantic search using different languages.</li>
 </ol>
 </blockquote>
 <p>&nbsp;</p>
