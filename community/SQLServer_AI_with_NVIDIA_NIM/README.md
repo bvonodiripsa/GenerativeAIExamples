@@ -6,7 +6,7 @@
 
 Unlock newly announced AI features in **Microsoft SQL Server 2025** using **NVIDIA NIM Microservices** for accelerated AI inference on both Azure Cloud and Azure Local.
 
-This guide demonstrates efficient and secure integration of Microsoft SQL Server 2025 with **NVIDIA NeMo Retrieval E5 Embedding v5**, running in the cloud via Azure Container Apps and on-premises using Azure Local with Windows, WSL 2, and/or Ubuntu.
+This guide demonstrates efficient and secure integration of Microsoft SQL Server 2025 with **NVIDIA NeMo llama-3.2-nv-embedqa-1b-v2**, running in the cloud via Azure Container Apps and on-premises using Azure Local with Windows, WSL 2, and/or Ubuntu.
 
 The guide provides an enterprise-level architecture and a demo implementation leveraging the latest versions of Microsoft SQL Server and NVIDIA NeMo Text Embedding NIM.
 
@@ -115,13 +115,19 @@ In general, I am trying to reach the same goals using the latest NVIDIA and Azur
 - SQL scripts to demonstrate SQL Server communication with NVIDIA NIM for remote and local scenarios are in the **scripts** folder.
 - Database for the demo can be generated using **AdventureWorks.bacpac** (copy in **/data**).
 - Run scripts in order (as in demo video):
-    i. Create AdventureWorks database.
-    ii. Create **ProductDescriptionEmbeddings** table.
-    iii. Check the table and view embeddings with **Select_Embeddings.sql**.
-    iv. Run **proc*.sql** scripts to register in the demo database.
-    v. Create/modify External Model with the correct NIM location (local or remote).
-    vi. Execute demo scripts to populate embeddings via NVIDIA NIM.
-    vii. Verify using **Select_Embeddings.sql** again.
+<blockquote>
+<ol type="1">
+  <li>Create AdventureWorks database.</li>
+  <li>Create <strong>ProductDescriptionEmbeddings</strong> table.</li>
+  <li>Check the table and view embeddings with <strong>Select_Embeddings.sql</strong>.</li>
+  <li>Run <strong>proc*.sql</strong> scripts to register in the demo database.</li>
+  <li>Create or modify the External Model with the correct NIM location (local or remote).</li>
+  <li>Execute demo scripts to populate embeddings via NVIDIA NIM.</li>
+  <li>Verify using <strong>Select_Embeddings.sql</strong> again.</li>
+  <li>Execute <strong>RunPrompt.sql</strong> to demonstrate SQL Server cosine <code>vector_distance</code> usage for semantic search using different languages.</li>
+</ol>
+</blockquote>
+<p>&nbsp;</p>
 
 [▶️ Watch Demo](https://drive.google.com/file/d/1VnyfHsL_rWfZvcHfKxx1NZXd5XvL8RcK/view?usp=sharing)
 
