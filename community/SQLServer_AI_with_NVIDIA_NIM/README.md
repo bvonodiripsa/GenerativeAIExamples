@@ -28,7 +28,7 @@ This repository demonstrates a new approach using **NVIDIA NIM Microservices** t
 
 Below is the proposed architecture:
 
-![Architecture Diagram](images/diagram.JPG)
+![Architecture Diagram](images/diagram.jpg)
 
 *Pic.1: Architecture Diagram*
 
