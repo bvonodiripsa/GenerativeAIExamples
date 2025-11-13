@@ -1,4 +1,4 @@
-# **NVIDIA NIM with SQL Server 2025 AI on Azure Cloud and Azure Local**
+# **NVIDIA NIM with Microsoft SQL Server 2025 AI on Azure Cloud and Azure Local**
 
 ---
 
@@ -6,9 +6,9 @@
 
 Unlock newly announced AI features in **Microsoft SQL Server 2025** using **NVIDIA NIM Microservices** for accelerated AI inference on both Azure Cloud and Azure Local.
 
-This guide demonstrates efficient and secure integration of Microsoft SQL Server 2025 with **NVIDIA NeMo llama-3.2-nv-embedqa-1b-v2**, running in the cloud via Azure Container Apps and on-premises using Azure Local with Windows, WSL 2, and/or Ubuntu.
+This guide demonstrates efficient and secure integration of Microsoft SQL Server 2025 with **llama-nemotron-embed-1b-v2**, running in the cloud via Azure Container Apps and on-premises using Azure Local with Windows, WSL 2, and/or Ubuntu.
 
-The guide provides an enterprise-level architecture and a demo implementation leveraging the latest versions of Microsoft SQL Server and NVIDIA NeMo Text Embedding NIM.
+The guide provides an enterprise-level architecture and a demo implementation leveraging the latest versions of Microsoft SQL Server and Llama Nemotron Embed 2 model by NVIDIA.
 
 ---
 
@@ -19,8 +19,8 @@ Microsoft SQL Server 2025 introduces several new features. One of the most notab
 - **AI-Enhanced Analytics:** Improved support for embedding and leveraging AI models, including new system stored procedures for scoring and prediction.
 - **External REST Endpoints:** New T-SQL commands to invoke REST APIs (including AI services) directly from SQL Server, such as `sp_invoke_external_rest_endpoint`.
 
-Implementation of these features is mostly based on integration with Azure OpenAI and Ollama services.  
-This repository demonstrates a new approach using **NVIDIA NIM Microservices** to perform enterprise-level, secure, GPU-accelerated, Docker-based SQL Server inference with custom models on Azure Cloud and/or Azure Local.
+Implementation of these features is mostly based on integration with Azure OpenAI.  
+This repository demonstrates a new approach using **NVIDIA NIM microservices** to perform enterprise-level, secure, GPU-accelerated, Docker-based SQL Server inference with custom models on Azure Cloud and/or Azure Local.
 
 ---
 
@@ -30,7 +30,7 @@ Below is the proposed architecture:
 
 ![Architecture Diagram](images/diagram.jpg)
 
-*Pic.1: Architecture Diagram*
+*Image.1: Architecture Diagram*
 
 **Key Points:**
 - New AI functionality is based on secure (HTTPS) communication with external endpoints to SQL Server, which could be in the cloud or on-premises.
@@ -40,8 +40,8 @@ Below is the proposed architecture:
 - Meets SQL Server requirements for security, performance, and ease of deployment.
 
 **Highlights of proposed approach**
-- **NVIDIA Enterprise NIMs** provide optimized inference models running on GPU.
-- All NIMs use Docker containers, simplifying deployment and ensuring compatibility across cloud and local Windows/Linux environments with NVIDIA GPU.
+- **NVIDIA NIMs** provide optimized inference models running on GPU.
+- NIMs use docker containers, simplifying deployment and ensuring compatibility across cloud and local Windows/Linux environments with NVIDIA GPU.
 - **NVIDIA NIM** supports OpenAI standards.
 - It provides secure, direct communication (TLS certificates for encryption and mutual trust) for on-premises deployment.
 - For remote (cloud) deployment, **Azure Container Apps** are used, connecting directly to the NVIDIA NIM repository for always-up-to-date models.
@@ -61,7 +61,7 @@ Below is the proposed architecture:
 
 # **Demo**
 
-This section explains how to use the proposed architecture for **SQL Server 2025 AI** functionality with **NVIDIA Retrieval QA using E5 Embedding v5**.
+This section explains how to use the proposed architecture for **SQL Server 2025 AI** functionality with **NVIDIA llama-nemotron-embed-1b-v2**.
 
 **Scenarios demonstrated:**
 
@@ -80,7 +80,7 @@ The demo is trying to generalize and simplify an approach presented by the Micro
 
 In general, I am trying to reach the same goals using the latest NVIDIA and Azure technologies:
 
-- How to use AI functionality in SQL Server 2025 using NVIDIA Inference Microservices (NIM) containers.
+- How to use AI functionality in SQL Server 2025 using NVIDIA NIM inference microservices.
 - The solution enables generating and storing AI model embeddings in SQL Server, making it possible to search for similar data using natural language prompts—even across multiple languages.
 - The demo shows how to deploy and configure both the AI model (in NIM containers) and SQL Server in Azure Cloud and On-premises.
 - It covers practical issues such as certificate management, REST API configuration, required payload parameters, etc.
