@@ -1,4 +1,9 @@
-# **NVIDIA NIM with Microsoft SQL Server 2025 AI on Azure Cloud and Azure Local**
+<div align="center">
+
+# **NVIDIA NIM with Microsoft SQL Server 2025 AI on Azure Cloud**  
+# **and Azure Local**
+
+</div>
 
 ---
 
